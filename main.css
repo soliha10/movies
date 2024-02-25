@@ -1,0 +1,137 @@
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+.movie-list__wrapper {
+  min-height: 415px;
+}
+
+.rating-icon::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url("./images/star.svg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.year-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url("./images/calendar-clock.svg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: '';
+}
+.rutime-icon::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url("./images/time-fast.svg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: '';
+}
+.movie-modal__imdb-link::after {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url("./images/link.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: '';
+} */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+.movie-list__wrapper {
+  min-height: 415px;
+  /* max-height: 450px; */
+}
+
+
+
+.rating-icon::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url("./images/star.svg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.year-icon::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url("./images/calendar-clock.svg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: "";
+}
+.runtime-icon::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url("./images/time-fast.svg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.movie-modal__imdb-link::after {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  background-image: url("./images/link.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+
+
