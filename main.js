@@ -4,7 +4,7 @@
 const elSearchForm = document.querySelector(".js-search-movie");
 const elSearchInput = document.querySelector(".js-search-movie-title");
 
-
+const elLoadingImg = document.querySelector(".loading-svg");
 // Movies List
 const elMovieList = document.querySelector(".js-movie-list");
 const elMovieAlert = document.querySelector(".js-not-found-movie");
@@ -38,6 +38,8 @@ function getHoursAndMinut(runtime) {
 function renderMovies(moviesList, node) {
 
   const moviesFragment = document.createDocumentFragment();
+
+  node.previousElementSibling.style.display ="none";
 
   node.innerHTML = "";
 
@@ -128,7 +130,7 @@ elSearchForm.addEventListener("submit", function(evt){
 })
 
 
-renderMovies(movies.slice(0, 32), elMovieList);
+renderMovies(movies.slice(0, 1200), elMovieList);
 
 
 
